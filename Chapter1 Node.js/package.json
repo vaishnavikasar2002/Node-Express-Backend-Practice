@@ -1,0 +1,18 @@
+{
+  "name": "chapterone-node",
+  "version": "1.0.0",
+  "description": "mu new file",
+  "main": "common.js",
+  "dependencies": {
+    "random": "^5.1.1",
+    "random-words": "^2.0.1",
+    "seedrandom": "^3.0.5",
+    "words": "^0.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error:no test specified\" && exit 1"
+  },
+  "author": "vaishnavi",
+  "license": "ISC"
+}
