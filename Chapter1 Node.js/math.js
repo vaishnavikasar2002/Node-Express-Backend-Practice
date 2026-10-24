@@ -6,7 +6,7 @@ const g = 9.8;
 const PI = 3.14;
 
 // module.exports nhi kela tr by default{} empty object jato
-module.exports="hello";
+module.exports=123;
 
 
 // OR
@@ -16,11 +16,12 @@ let obj = {
     g:g,
     PI:PI,
 };
+
 module.exports=obj;
 
 // ---------------------------------------------------------------------------------------------------------
 
-//import module
+//import module - run karta na varch OR vala code comment karne nhi tr err yeila
 
 //  export const sum1 = (a,b)=>a+b;
 //  export const mul1 = (a,b)=>a*b;
