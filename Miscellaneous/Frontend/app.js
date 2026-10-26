@@ -33,6 +33,7 @@ const stu2 = {
 //topic:  factory function => create for object => (mostly not used )(1st way)
 //index1 he live server ne run karaych then inspect then in console => let p1 = PersonMaker("vaishnavi",23);(undefine print hoil)//  p1(name,age talk print hoil)  // p1.talk();(hii , my name is vaishnavi)
 //factory madhe diff copy create hote
+
 function PersonMaker(name, age) {
   const person = {
     name: name,
@@ -44,13 +45,15 @@ function PersonMaker(name, age) {
   return person;
 }
 
+// let p1 = PersonMaker("chetan", 25); //write a line in console 
+
 // --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 //topic : new operatoror ....  good method (complicated syntax)(2nd way)
 //constructors = doesn't return anything n start whith capital letters
 
 function Person1(name, age) {
-  this.name = name;
+  this.name = name; //object print nhi kart direct object la access karta
   this.age = age;
 }
 
@@ -58,7 +61,7 @@ Person1.prototype.talk = function () {
   console.log(`hi, my name is ${this.name}`);
 };
 
-let p2 = new Person1("vaishnavi", 23); // same copy create hote p2 la new copy create nhi honar
+let p2 = new Person1("vaishnavi", 23); // same copy create hote p3 la new copy create nhi honar
 let p3 = new Person1("rahul", 32);
 
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -99,7 +102,6 @@ class Human {
   }
 }
 
-// let hum1 = new Human("omkar",25);
 
 class Student extends Human {
   constructor(name, age, marks) {

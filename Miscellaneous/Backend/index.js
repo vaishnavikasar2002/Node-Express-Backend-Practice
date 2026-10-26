@@ -3,8 +3,8 @@ const app = express();
 const port = 8080;
 
 //middlewares
-app.use(express.urlencoded({extended:true})); //post req use karta na nehmi lihito
-app.use(express.json()); //he line nhi lihile tr undefine print hoil in gitbash
+app.use(express.urlencoded({extended:true})); //post req use karta na nehmi lihito -he 2 line nhi lihile tr undefine print hoil in gitbash (data send karto teva)
+app.use(express.json()); // json format madhe ha data trasfer kela(hoppscoth varun) he line write karnar
 
 // index.html chi file run karun form madhe data send karaycha asel tar
 // jr postman madhe GET/post request karaycha asel tar konti req karaychi te select karaychi then path takaych aani body(raw) madhe data takaycha {"user":"apna"}
